@@ -1,0 +1,129 @@
+/* stylein.css */
+
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Use Oswald font for the body */
+body {
+  font-family: "oswald", sans-serif;
+}
+
+/* Set container width and center it */
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* Style for the header */
+header {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-center {
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  color: #fff;
+  padding: 5px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Style for the input section */
+#inputenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+/* Centering the form controls */
+.form-control {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+}
+
+/* Style for the image */
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style for form inputs */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+}
+
+/* Style for the alert paragraphs */
+.text-danger {
+  color: #ff0000;
+  margin: 5px 0;
+  text-align: center;
+  display: none; /* Hidden by default */
+}
+
+/* Style for the login button */
+button {
+  display: block;
+  width: 50%;
+  max-width: 200px;
+  margin: 20px auto 0; /* Adjusted margin to center vertically */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+#text-centers {
+  font-size: 32px;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 20px;
+}
+#loginAlert{
+  display: none;
+  text-align: center;
+}
+
+.signin {
+
+  color: #fff;
+}
+a{
+  text-decoration:none
+}

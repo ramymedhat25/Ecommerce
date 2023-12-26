@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signUp</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styleup.css" />
+  </head>
+  <body>
+    <section id="inputdetalis" class="">
+      <div class="w-75 ">
+        <header>
+          <div class="container">
+            <div class="header-content">
+              <a href="signin.html" class="text-center"> Welcome</a>
+              <nav>
+                <ul>
+                  <li><a href="signin.html"> Sign In</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <!-- start 3 input -->
+        <input
+          type="text"
+          placeholder="Enter your name"
+          class="form-control "
+          id="Name"
+        />
+        <p id="usernameAlert" > starting with at least 3 letters  </p>
+      
+
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="form-control "
+          id="email"
+        />
+        <p id="userEmailAlert">name@example.com</p>
+
+        <input
+          type="password"
+          placeholder="Enter password"
+          class="form-control "
+          id="pass"
+        />
+
+        <p id="userPasswordAlert" class="d-none m-0">you must strenth your password, from start with 3 to 15 characters</p>
+
+        <p class="" id="accountExistMsg">this account is exist ! Try another one.</p>
+
+        <!-- end 3 input -->
+
+        <!-- <img src="./img/lap1.jpg" alt="" /> -->
+        <!-- start button -->
+        <div class="d-grid gap-2 d-flex justify-content-lg-center" id="signup">
+          <button
+            class="btn "
+            type="button"
+            onclick="create() "
+          >
+            Sign up
+          </button>
+        </div>
+        <!-- end button -->
+        <p class="" id="text-centers">
+          You have an account?
+          <a class="text-white text-decoration-none"  onclick=" clear()" href="signin.html">
+            <span class="signup">SignIn</span></a
+          >
+        </p>
+      </div>
+    </section>
+    <script src="js/login.js"></script>
+  </body>
+</html>

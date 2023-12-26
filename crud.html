@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+  </head>
+  
+  <body>
+    <section  class=" w-100 crud ">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container shadow-lg m-auto" id="wel_log">
+              <header>
+                <div class="container">
+                  <div class="header-content">
+                    <h1 id="welcome" class="text-center">welcome </h1>
+                    <nav>
+                      <ul>
+                        <button class="btn btn-outline-warning" onclick="log()" type="submit" href="./signin.html">logout</button>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </header>
+
+
+
+              </div>
+          </nav>
+     <!-- start input  -->
+     <div class="w-75 mx-auto p-5 m-5 shadow-lg" id="centered-inputs">
+      <h2>CRUD SYSTEM</h2>
+
+      <br><br><label>productName:</label><br><br>
+      <input type="text" onblur="validateProduct()" class="form-control mb-3" id="productName"  placeholder="Dell...">
+
+      <br><br><label>productCategory:</label><br><br>
+        <input type="text" class="form-control mb-3" id="productCategory" onblur="validateProduct()"  placeholder="Laptop " >
+
+        <br><br><label>productImg:</label><br><br>
+        <input type="file" class="form-control mb-3" id="productImg"    placeholder="Choose Img" >
+
+        <br><br> <label>productPrice:</label><br><br>
+        <input type="number" class="form-control mb-3" id="productPrice" onblur=" validateProduct()"  placeholder="3000 ">
+
+        <br><br><label>Stock Quantity:</label><br><br>
+        <input type="number" class="form-control mb-3" id="Stock Quantity"  placeholder="20">
+
+        <br><br><label>productDescription</label><br><br>
+        <textarea class="form-control mb-3" id="productDesc" onblur="validateProduct()"  placeholder="productDescription" ></textarea>
+        <br><br>
+      <button  class="btn btn-primary" id="addProduct">AddProduct</button>      
+      <button class="btn btn-danger" onclick="clearForm()">clear</button>        <br><br>
+
+  </div>
+   <!-- end input -->
+   <!-- start search -->
+  <input onkeyup="searchProdct()"  id="searchValue" type="text" placeholder="search..." class="form-control my-5 w-50 mx-auto">
+<!-- end search -->
+<!-- start table -->
+  <table class="table w-75 mx-auto">
+    <thead>
+        <th >ID</th>
+        <th>name</th>
+        <th>Category</th>
+        <th>Image</th>
+        <th>price</th>
+
+        <th>Stock Quantity</th>
+        <th>desc</th>
+        <th>update</th>
+        <th>delete</th>
+    </thead>
+    <tbody id="tableBody">
+  
+    </tbody>
+  </table>
+  <!-- end table -->
+</section>
+    <script src="js/login.js"></script>
+    <script src="js/crud.js"></script>
+   
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <link rel="stylesheet" href="css/stylein.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <section id="inputenter" class="">
+      <div class="w-75 ">
+        <header>
+          <div class="container">
+            <div class="header-content">
+              <h1  class="text-center">welcome </h1>
+
+              <nav>
+                <ul>
+                  <li><a href="signup.html"> Sign UP</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <input
+          type="text"
+          placeholder="Enter your email"
+          class="form-control  "
+          id="email"
+        />
+
+        <input
+          type="password"
+          placeholder="Enter your password "
+          class="form-control  "
+          id="pass"
+        />
+        <!-- end 2 input -->
+        <!-- start button -->
+        <p id="loginAlert" >
+          wrong email or password
+        </p>
+
+        <div class="">
+          <button 
+            class="btn "
+            type="button"
+            onclick="login()"
+          
+          >
+            Login
+          </button>
+          <!-- end button -->
+        </div>
+        <p class="" id="text-centers">
+          Don’t have an account?
+          <a
+            class="text-white "
+            onclick=" clear()"
+            href="signup.html"
+            ><span class="signin">SignUp</span>
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>

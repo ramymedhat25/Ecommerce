@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+
+}
+.container{
+   width: 80%;
+    margin: auto;
+ color: black;
+}
+.container1{
+    width: 80%;
+    margin: auto;
+display: flex;
+margin-top: 30px;
+}
+header{
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-content .brand{
+    font-size: 32px;
+    text-decoration: none;
+    color: #fff;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav li a{
+    display: block;
+    min-width: 50px;
+    color: fff;
+    margin: 0 5px;
+    padding: 5px;
+}
+.product{
+    display: flex;
+
+    width: 100%;
+    margin:20px 10px;
+}
+.product-item{
+
+    display: flex;
+    width: 90%;
+    border: 1px solid black;
+    min-height: 150px;
+}
+.product-item-img{
+    width: 100%;
+
+
+}
+.product-item-action{
+width: 100%;
+}
+
+.product-item .add-to-chart{
+    background-color: darkgreen;
+    color:#fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+
+}
+.brand{
+    color:blueviolet !important ;
+}

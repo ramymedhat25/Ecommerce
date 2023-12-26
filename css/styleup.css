@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "oswald", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-center {
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  color: #fff;
+  padding: 5px;
+  margin: 0 10px;
+}
+
+#inputdetalis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.form-control {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+}
+
+.text-danger {
+  color: #ff0000;
+  margin: 5px 0;
+  text-align: center;
+  display: none;
+}
+
+button {
+  display: block;
+  width: 50%;
+  max-width: 200px;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#signup {
+  width: 50%;
+  max-width: 200px;
+  margin: 20px auto;
+}
+
+#text-centers {
+  font-size: 32px;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 20px;
+}
+ #usernameAlert {
+display: none;
+text-align: center;
+}
+#userEmailAlert {
+  display: none;
+  text-align: center;
+  }
+  #userPasswordAlert {
+    display: none;
+    text-align: center;
+    }
+    #accountExistMsg {
+      display: none;
+      text-align: center;
+      }
+      a{
+        text-decoration: none;
+      }
+
+      .signup {
+
+        color: #fff;
+      }
+    
+
+

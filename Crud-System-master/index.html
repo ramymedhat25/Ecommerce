@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" href="img/me.jpg"> -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CRUD SYSTEM</title>
+</head>
+
+<body>
+    <!-- start input  -->
+    <div class="w-75 mx-auto p-5 m-5 shadow-lg">
+        <h1>CRUD SYSTEM</h1>
+        <label>productName:</label>
+        <input type="text" onblur="validateProduct()" class="form-control mb-3" id="productName"  placeholder="Dell...">
+        <label>productCategory:</label>
+        <input type="text" class="form-control mb-3" id="productCategory" onblur="validateProduct()"  placeholder="Laptop " >
+        <label>productPrice:</label>
+        <input type="number" class="form-control mb-3" id="productPrice" onblur=" validateProduct()"  placeholder="3000 ">
+        <label>productDescription</label>
+        <textarea class="form-control mb-3" id="productDesc" onblur="validateProduct()"  placeholder="search..." ></textarea>
+        <button  class="btn btn-primary" id="addProduct">AddProduct</button>
+        <button class="btn btn-danger" onclick="clearForm()">clear</button>
+    </div>
+     <!-- end input -->
+     <!-- start search -->
+    <input onkeyup="searchProdct()"  id="searchValue" type="text" placeholder="search..." class="form-control my-5 w-50 mx-auto">
+<!-- end search -->
+<!-- start table -->
+    <table class="table w-75 mx-auto">
+      <thead>
+          <th>index</th>
+          <th>name</th>
+          <th>price</th>
+          <th>category</th>
+          <th>desc</th>
+          <th>update</th>
+          <th>delete</th>
+      </thead>
+      <tbody id="tableBody">
+    
+   
+      </tbody>
+    </table>
+    <!-- end table -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
